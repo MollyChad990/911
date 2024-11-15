@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You, Deborah</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6e6;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: #ffcccc;
+        }
+        header h1 {
+            color: #cc0000;
+            font-size: 3em;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .message, .contact {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .message p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .contact button {
+            padding: 10px 20px;
+            color: white;
+            background-color: #cc0000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+        .contact button:hover {
+            background-color: #990000;
+        }
+        #responseMessage {
+            font-size: 1.2em;
+            color: #006600;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>I Love You, Deborah</h1>
+    <p>A message from my heart to yours</p>
+</header>
+
+<div class="container">
+    <!-- Message Section -->
+    <section class="message">
+        <h2>Dear Deborah,</h2>
+        <p>
+            I have thought of countless ways to tell you how I feel, but no words can capture the depth of my love for you. Your presence fills my life with joy, and every moment I spend with you is a treasure I hold close. I love you for your kindness, your laughter, and the warmth you bring to everyone around you.
+        </p>
+        <p>
+            You make my world brighter, and I can’t imagine my days without you. Every time I see you smile, it’s as if everything else fades away. My heart belongs to you, Deborah, and I hope you’ll let me share it with you always. I love you more than words can say, and this is just the beginning of a beautiful story I hope we’ll write together.
+        </p>
+        <p>With all my love,</p>
+        <p><strong>Kevin</strong></p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Will You Be Mine?</h2>
+        <p>If you feel the same, let me know. Your words mean everything to me.</p>
+        <button onclick="sendLoveMessage()">Send Your Response</button>
+        <div id="responseMessage"></div>
+    </section>
+</div>
+
+<footer style="text-align: center; padding: 10px; background-color: #ffcccc;">
+    <p>&copy; 2024 From Chisom to Deborah. All My Love.</p>
+</footer>
+
+<script>
+    function sendLoveMessage() {
+        const response = prompt("Deborah, how do you feel?");
+        if (response) {
+            document.getElementById('responseMessage').innerText = You said: "${response}". Thank you for sharing your heart with me, Deborah.;
+        } else {
+            document.getElementById('responseMessage').innerText = "No response, but I'll wait as long as it takes.";
+        }
+    }
+</script>
+
+</body>
+</html>
